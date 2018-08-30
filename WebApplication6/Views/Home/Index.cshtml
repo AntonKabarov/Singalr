@@ -1,0 +1,47 @@
+﻿@model _chat.Models.user
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h2 id="p"></h2>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react-dom.js"></script>
+    <script src='@Url.Content("~/Scripts/app.jsx")'></script>
+    <div class="main">        
+        
+        <div id="loginBlock">   
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react-dom.js"></script>
+        <script src='@Url.Content("~/Scripts/app.jsx")'></script>
+        <div id="chatBody">
+            <div id="header"></div>
+            <div id="inputForm">
+                <input type="text" id="message" />
+                <input type="button" id="sendmessage" value="Отправить" />
+            </div>
+            <div id="chatroom"></div>
+
+            <div id="chatusers">
+                <p><b>Все пользователи</b></p>
+            </div>
+        </div>
+        <input id="hdId" type="hidden" />
+        <input id="username" type="hidden" />
+    </div>
+   
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <!--Ссылка на библиотеку SignalR -->
+    <script src="~/Scripts/jquery.signalR-2.3.0.min.js"></script>
+    <!--Ссылка на автоматически сгенерированный скрипт хаба SignalR -->
+    <script src="~/signalr/hubs"></script>
+    <script src="~/Scripts/util.js"></script>
+</body>
+</html>
